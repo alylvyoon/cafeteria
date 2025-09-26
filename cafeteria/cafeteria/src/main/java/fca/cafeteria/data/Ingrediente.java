@@ -20,4 +20,5 @@ public class Ingrediente {
     private String descripcion;
     @Column(name="costo")
     private double costo;
+
 }

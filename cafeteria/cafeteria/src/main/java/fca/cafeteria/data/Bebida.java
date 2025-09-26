@@ -1,10 +1,7 @@
 package fca.cafeteria.data;
 
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
@@ -20,5 +17,8 @@ public class Bebida {
     @Column(name="descripcion")
     private String descripcion;
 
+    @ManyToOne
+    @JoinColumn(name="idTipoBebida")
+    private TipoBebida tipoBebida;
 
 }

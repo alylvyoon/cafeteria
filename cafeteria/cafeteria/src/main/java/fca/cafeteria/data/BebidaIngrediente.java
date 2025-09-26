@@ -16,4 +16,5 @@ public class BebidaIngrediente {
     private Integer idBebidaIngrediente;
     @Column(name="cantidad")
     private int cantidad;
+
 }
